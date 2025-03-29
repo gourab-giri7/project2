@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
    margin: 3%;
@@ -10,6 +11,7 @@ nav{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .logo{
     width: 19%;
@@ -329,7 +331,7 @@ nav button:hover{
 
 
 
-@media( max-width:760px)
+@media( max-width:740px)
 {
     .others{
         width: 76%;
@@ -373,4 +375,89 @@ nav button:hover{
         width: 80%;
     }
 
+}
+
+/* for phone */
+
+@media( max-width:500px)
+{
+    nav{
+        width:150vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .others{
+        font-size: larger;
+        width: 100%;
+    }
+    .others button{
+        height: 3vh;
+        width: 35vw;
+    }
+    .div1{
+        margin-top: 8%;
+        width:150vw ;
+        height: auto;
+    }
+    .div1 .left{
+        font-size: larger;
+    }
+    .div1 .left button{
+        width: 35vw;
+        height: 4vh;
+    }
+    .div2{
+        width: 150vw;
+    }
+    .div2 img{
+        width: 26vw;
+    }
+    .div3{
+        width: 150vw;
+    }
+    .div3 span{
+        font-size: medium;
+        width: 5000px;
+    }
+    .div4{
+        width: 150vw;
+    }
+    .first_box, .second_box, .third_box, .fourth_box{
+        width: 200vw;
+        height: 45%;
+    }
+    .div5{
+        height: 20%;
+        margin-top: 80vh;
+        width: 150vw;
+        border-radius: 25px;
+        justify-content: center;
+    }
+    .div5 .left{
+        width: 100%;
+        align-items: center;
+        margin: 2vw;
+    }
+    .div5 .left button{
+        width: 80%;
+    }
+    .div5 .right{
+        display: flex;
+        justify-content: center;
+    }
+    .div5 .right img{
+        height: 30vh;
+    }
+    .div6{
+        width: 150vw;
+    }
+    .div6 span{
+        width: 70%;
+    }
+    .footer{
+        width: 150vw;
+        height: 35vh;
+    }
 }
