@@ -331,7 +331,7 @@ nav button:hover{
 
 
 
-@media( max-width:740px)
+@media(min-width:740px)
 {
     .others{
         width: 76%;
